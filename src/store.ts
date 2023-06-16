@@ -6,7 +6,8 @@ import tasksReducer from './features/tasks/tasksReducer';
 const store = createStore(combineReducers({
     counter: counterReducer,
     auth: authReducer,
-    tasks: tasksReducer
+    tasks: tasksReducer,
+    products: productsReducer
 },));
 
 export default store;
