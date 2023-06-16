@@ -1,10 +1,12 @@
 import { combineReducers, createStore } from 'redux';
 import authReducer from './features/auth/authReducer';
 import counterReducer from './features/counter/counterReducer';
+import tasksReducer from './features/tasks/tasksReducer';
 
 const store = createStore(combineReducers({
     counter: counterReducer,
-    auth: authReducer
+    auth: authReducer,
+    tasks: tasksReducer
 },));
 
 export default store;
