@@ -7,7 +7,7 @@ const store = createStore(combineReducers({
     counter: counterReducer,
     auth: authReducer,
     tasks: tasksReducer,
-    products: productsReducer
+    // products: productsReducer
 },));
 
 export default store;
