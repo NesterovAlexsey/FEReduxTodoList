@@ -1,5 +1,5 @@
 type Action =
-    | { type: 'book/add'; payload: string }
+    | { type: 'book/add'; payload: { title: string, author: string, dateOfProduction: number } }
     | { type: 'book/delete'; payload: string }
     | {
         type: 'book/edit';
