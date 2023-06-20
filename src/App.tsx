@@ -6,6 +6,7 @@ import Counter from './features/counter/Counter';
 import { RootState } from './store';
 import Login from './features/auth/Login';
 import Tasks from './features/tasks/Tasks';
+import Books from './features/books/Books';
 
 function App(): JSX.Element {
   const value = useSelector((state: RootState) => state.counter.value);
@@ -19,12 +20,14 @@ function App(): JSX.Element {
         <Link to="/login">Login</Link>{' '}
         <Link to="/counter">Counter</Link>{' '}
         <Link to="/tasks">Tasks</Link>{' '}
+        <Link to="/books">Books</Link>{' '}
       </nav>
       <br />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/counter" element={<Counter />} />
         <Route path="/tasks" element={<Tasks />} />
+        <Route path="/books" element={<Books />} />
       </Routes>
     </div>
   );
