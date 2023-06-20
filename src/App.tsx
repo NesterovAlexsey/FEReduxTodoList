@@ -17,8 +17,8 @@ function App(): JSX.Element {
       {user && (<h2>Привет, {user}</h2>)}
       <nav>
         <Link to="/login">Login</Link>{' '}
-        <Link to="/counter">Counter</Link>
-        <Link to="/tasks">Tasks</Link>
+        <Link to="/counter">Counter</Link>{' '}
+        <Link to="/tasks">Tasks</Link>{' '}
       </nav>
       <br />
       <Routes>
